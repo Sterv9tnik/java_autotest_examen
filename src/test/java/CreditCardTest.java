@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Configuration;
 import entity.User;
 import helper.DateFormatter;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
@@ -19,6 +20,7 @@ public class CreditCardTest {
 
     @BeforeEach
     public void setUp() {
+        WebDriverManager.chromedriver().driverVersion("103").setup();
         Configuration.browser = "chrome";
         //Configuration.browserSize = "1920x1080";
         //Configuration.remote = "http://localhost:4444/wd/hub";

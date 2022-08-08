@@ -33,6 +33,12 @@
             <artifactId>selenide</artifactId>
             <version>6.6.6</version>
         </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.2.1</version>
+        </dependency>
+
         <!-- Test API(s) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
