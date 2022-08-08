@@ -20,13 +20,13 @@ public class CreditCardTest {
     @BeforeEach
     public void setUp() {
         Configuration.browser = "chrome";
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = "http://localhost:4444/wd/hub";
-        //Configuration.headless = true;
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-        Configuration.browserCapabilities = capabilities;
+        //Configuration.browserSize = "1920x1080";
+        //Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.headless = true;
+        //DesiredCapabilities capabilities = new DesiredCapabilities();
+        //capabilities.setCapability("enableVNC", true);
+        //capabilities.setCapability("enableVideo", true);
+        //Configuration.browserCapabilities = capabilities;
     }
 
     @Test
