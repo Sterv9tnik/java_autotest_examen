@@ -3,6 +3,7 @@ import entity.User;
 import helper.DateFormatter;
 import io.qameta.allure.Description;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.CreditCardMtsCashback;
@@ -16,11 +17,12 @@ public class CreditCardTest {
 
     CreditCardMtsCashbackSteps creditCardMtsCashbackSteps = new CreditCardMtsCashbackSteps();
 
-    @Before
+    @BeforeEach
     public void setUp() {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "http://localhost:4444/wd/hub";
+        //Configuration.headless = true;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
